@@ -19,7 +19,12 @@ export default {
           700: '#b45309',
           800: '#92400e',
           900: '#78350f',
-        }
+        },
+        custom: {
+          gold: '#E1BD84',
+          'gold-light': '#e8cda3',
+          'gold-dark': '#c8a66f',
+        },
       },
     },
   },
