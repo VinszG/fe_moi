@@ -19,63 +19,7 @@
                     </a>
                 </div>
                 
-                <!-- Centered Navigation for desktop -->
-                <div class="hidden md:flex md:items-center md:justify-center flex-1">
-                    <div class="flex space-x-10">
-                        <a href="#" class="px-3 py-2 text-sm font-medium text-amber-900 border-b-2 border-transparent hover:border-amber-800 hover:text-amber-700 transition duration-150">
-                            Home
-                        </a>
-                        <a href="#" class="px-3 py-2 text-sm font-medium text-amber-800 border-b-2 border-transparent hover:border-amber-800 hover:text-amber-700 transition duration-150">
-                            Location &amp; Doctor
-                        </a>
-                        <a href="#" class="px-3 py-2 text-sm font-medium text-amber-800 border-b-2 border-transparent hover:border-amber-800 hover:text-amber-700 transition duration-150">
-                            Treatment
-                        </a>
-                        <a href="#" class="px-3 py-2 text-sm font-medium text-amber-800 border-b-2 border-transparent hover:border-amber-800 hover:text-amber-700 transition duration-150">
-                            Contact Us
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Profile Dropdown -->
-                <div class="hidden md:flex md:items-center">
-                    <div class="relative">
-                        <button type="button" class="bg-amber-50 rounded-full flex text-sm p-1 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500 shadow-sm hover:shadow transition-all duration-200" id="user-menu-button" aria-expanded="false" aria-haspopup="true" onclick="toggleProfileMenu()">
-                            <span class="sr-only">Open user menu</span>
-                            <img class="h-10 w-10 rounded-full object-cover border-2 border-amber-300" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-                        </button>
-                        <div class="hidden origin-top-right absolute right-0 mt-3 w-64 rounded-lg shadow-lg py-1 bg-white ring-1 ring-amber-200 focus:outline-none transform opacity-0 scale-95" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1" id="user-menu">
-                            <div class="px-5 py-4 border-b border-amber-100 flex items-center">
-                                <img class="h-12 w-12 rounded-full object-cover border-2 border-amber-300 shadow-sm" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-                                <div class="ml-3">
-                                    <p class="text-sm font-medium text-amber-900">User Name</p>
-                                    <p class="text-xs text-amber-600 truncate">user@example.com</p>
-                                </div>
-                            </div>
-                            <div class="py-2">
-                                <a href="#" class="flex items-center px-5 py-3 text-sm text-amber-700 hover:bg-amber-50 transition-colors duration-150" role="menuitem">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                                    </svg>
-                                    Your Profile
-                                </a>
-                                <a href="#" class="flex items-center px-5 py-3 text-sm text-amber-700 hover:bg-amber-50 transition-colors duration-150" role="menuitem">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                                    </svg>
-                                    Settings
-                                </a>
-                                <div class="border-t border-amber-100 my-1"></div>
-                                <a href="#" class="flex items-center px-5 py-3 text-sm text-red-600 hover:bg-red-50 transition-colors duration-150" role="menuitem">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
-                                    </svg>
-                                    Sign out
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+               
                 
                 <!-- Mobile menu button -->
                 <div class="flex items-center md:hidden">

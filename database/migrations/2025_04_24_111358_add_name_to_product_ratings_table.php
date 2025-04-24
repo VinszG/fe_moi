@@ -12,15 +12,18 @@ return new class extends Migration
     public function up()
 {
     Schema::table('product_ratings', function (Blueprint $table) {
-        $table->boolean('is_verified')->default(false);
+        $table->string('name')->nullable();
     });
 }
+
 
     /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-        Schema::dropIfExists('product_ratings');
+        Schema::table('product_ratings', function (Blueprint $table) {
+            //
+        });
     }
 };

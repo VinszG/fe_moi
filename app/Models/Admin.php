@@ -2,19 +2,18 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
 
-class Admin extends Model
+class Admin extends Authenticatable
 {
-    use HasFactory;
+    use Notifiable;
 
-    // Tentukan nama tabel jika tidak mengikuti konvensi Laravel (optional)
-    // protected $table = 'admins';  // Gunakan jika nama tabel berbeda dari nama model (admin)
+    // Jika nama tabel berbeda dari default "admins", baru didefinisikan
+    // protected $table = 'admin'; // Sesuaikan jika pakai tabel 'admin'
 
-    // Tentukan kolom yang dapat diisi
     protected $fillable = ['name', 'email', 'password'];
 
-    // Nonaktifkan penggunaan timestamps
+    // Nonaktifkan timestamps kalau memang tidak digunakan
     public $timestamps = false;
 }

@@ -12,29 +12,25 @@
             Products
         </a>
         
-        <a href="#" class="flex items-center px-4 py-3 text-sm font-medium text-amber-800 hover:bg-amber-100 rounded-lg transition duration-150">
+        <a href="{{ route('admin.services.index') }}" class="flex items-center px-4 py-3 text-sm font-medium text-amber-800 hover:bg-amber-100 rounded-lg transition duration-150">
             <svg class="w-5 h-5 mr-3 text-amber-600" fill="none" stroke="currentColor" stroke-width="2"
                  viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round"
                       d="M9 17v-6a2 2 0 012-2h2a2 2 0 012 2v6m4 0H5"></path>
             </svg>
-            Users
-        </a>
-        <a href="#" class="flex items-center px-4 py-3 text-sm font-medium text-amber-800 hover:bg-amber-100 rounded-lg transition duration-150">
-            <svg class="w-5 h-5 mr-3 text-amber-600" fill="none" stroke="currentColor" stroke-width="2"
-                 viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                      d="M3 7h18M3 12h18M3 17h18"></path>
-            </svg>
-            Menu
-        </a>
-        <a href="#" class="flex items-center px-4 py-3 text-sm font-medium text-amber-800 hover:bg-amber-100 rounded-lg transition duration-150">
-            <svg class="w-5 h-5 mr-3 text-amber-600" fill="none" stroke="currentColor" stroke-width="2"
-                 viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                      d="M12 4v16m8-8H4"></path>
-            </svg>
-            Add New
+            Service
         </a>
     </nav>
+
+     <!-- Logout Button -->
+     <form action="{{ route('logout') }}" method="POST" class="mt-auto px-4 py-3">
+        @csrf
+        <button type="submit" class="w-full flex items-center px-4 py-3 text-sm font-medium text-amber-800 bg-amber-200 hover:bg-amber-300 rounded-lg transition duration-150">
+            <svg class="w-5 h-5 mr-3 text-amber-600" fill="none" stroke="currentColor" stroke-width="2"
+                 viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 9l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
+            Logout
+        </button>
+    </form>
 </aside>

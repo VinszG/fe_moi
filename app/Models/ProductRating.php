@@ -1,5 +1,9 @@
 <?php
 
+// app/Models/ProductRating.php
+
+// app/Models/ProductRating.php
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -9,13 +13,12 @@ class ProductRating extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'product_id', 'rating',
-    ];
+    protected $fillable = ['product_id', 'name', 'rating', 'message'];
 
-    // Relasi dengan produk
-    public function product()
+    public function user()
     {
-        return $this->belongsTo(Product::class);
+        return $this->belongsTo(User::class);
     }
 }
+
+
