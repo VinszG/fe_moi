@@ -15,19 +15,19 @@
         </div>
         
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            <!-- Product Card 1 -->
+            @foreach($products as $product)
             <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col">
                 <div class="relative h-64 overflow-hidden">
-                    <img src="https://via.placeholder.com/400x400" alt="Product 1" class="w-full h-full object-cover">
+                    <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}" class="w-full h-full object-cover">
                 </div>
                 <div class="p-5 flex flex-col flex-grow">
-                    <h3 class="text-xl font-medium mb-1" style="color: #E1BD84;">Facial Serum</h3>
+                    <h3 class="text-xl font-medium mb-1" style="color: #E1BD84;">{{ $product->name }}</h3>
                     <div class="w-8 h-0.5 mb-3" style="background-color: #E1BD84;"></div>
                     <div class="h-20 overflow-hidden mb-4">
-                        <p class="text-gray-600 text-sm leading-relaxed line-clamp-3">Advanced formula with vitamin C that reveals your skin's natural radiance and youthful glow.</p>
+                        <p class="text-gray-600 text-sm leading-relaxed line-clamp-3">{{ $product->description }}</p>
                     </div>
                     <div class="flex justify-between items-center mt-auto">
-                        <span class="font-bold" style="color: #E1BD84;">Rp 249.000</span>
+                        <span class="font-bold" style="color: #E1BD84;">Rp {{ number_format($product->price, 0, ',', '.') }}</span>
                         <a href="https://shopee.co.id" target="_blank" class="flex items-center justify-center w-10 h-10 rounded-full transition-colors" style="background-color: #E1BD84; hover:background-color: #c8a66f;">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
@@ -36,83 +36,8 @@
                     </div>
                 </div>
             </div>
-            
-            <!-- Product Card 2 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col">
-                <div class="relative h-64 overflow-hidden">
-                    <img src="https://via.placeholder.com/400x400" alt="Product 2" class="w-full h-full object-cover">
-                </div>
-                <div class="p-5 flex flex-col flex-grow">
-                    <h3 class="text-xl font-medium mb-1" style="color: #E1BD84;">Moisturizing Cream</h3>
-                    <div class="w-8 h-0.5 mb-3" style="background-color: #E1BD84;"></div>
-                    <div class="h-20 overflow-hidden mb-4">
-                        <p class="text-gray-600 text-sm leading-relaxed line-clamp-3">Luxurious hydrating formula enriched with natural extracts for lasting moisture and skin vitality.</p>
-                    </div>
-                    <div class="flex justify-between items-center mt-auto">
-                        <span class="font-bold" style="color: #E1BD84;">Rp 189.000</span>
-                        <a href="https://shopee.co.id" target="_blank" class="flex items-center justify-center w-10 h-10 rounded-full transition-colors" style="background-color: #E1BD84; hover:background-color: #c8a66f;">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Product Card 3 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col">
-                <div class="relative h-64 overflow-hidden">
-                    <img src="https://via.placeholder.com/400x400" alt="Product 3" class="w-full h-full object-cover">
-                </div>
-                <div class="p-5 flex flex-col flex-grow">
-                    <h3 class="text-xl font-medium mb-1" style="color: #E1BD84;">Cleansing Gel</h3>
-                    <div class="w-8 h-0.5 mb-3" style="background-color: #E1BD84;"></div>
-                    <div class="h-20 overflow-hidden mb-4">
-                        <p class="text-gray-600 text-sm leading-relaxed line-clamp-3">Pure and gentle formula that removes impurities while maintaining your skin's natural balance.</p>
-                    </div>
-                    <div class="flex justify-between items-center mt-auto">
-                        <span class="font-bold" style="color: #E1BD84;">Rp 159.000</span>
-                        <a href="https://shopee.co.id" target="_blank" class="flex items-center justify-center w-10 h-10 rounded-full transition-colors" style="background-color: #E1BD84; hover:background-color: #c8a66f;">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Product Card 4 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col">
-                <div class="relative h-64 overflow-hidden">
-                    <img src="https://via.placeholder.com/400x400" alt="Product 4" class="w-full h-full object-cover">
-                </div>
-                <div class="p-5 flex flex-col flex-grow">
-                    <h3 class="text-xl font-medium mb-1" style="color: #E1BD84;">Rejuvenating Mask</h3>
-                    <div class="w-8 h-0.5 mb-3" style="background-color: #E1BD84;"></div>
-                    <div class="h-20 overflow-hidden mb-4">
-                        <p class="text-gray-600 text-sm leading-relaxed line-clamp-3">Weekly intensive treatment that revitalizes tired skin for a luminous and refreshed appearance.</p>
-                    </div>
-                    <div class="flex justify-between items-center mt-auto">
-                        <span class="font-bold" style="color: #E1BD84;">Rp 129.000</span>
-                        <a href="https://shopee.co.id" target="_blank" class="flex items-center justify-center w-10 h-10 rounded-full transition-colors" style="background-color: #E1BD84; hover:background-color: #c8a66f;">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
-        
-        <div class="text-center mt-16">
-            <a href="https://shopee.co.id" target="_blank" class="inline-block px-10 py-3 text-white font-medium rounded-md shadow-md hover:shadow-lg transition-colors tracking-wider" style="background-color: #E1BD84; hover:background-color: #c8a66f;">
-                EXPLORE ALL PRODUCTS
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-            </a>
-        </div>
-    </div>
 </section>
 
 <!-- Client Reviews Section -->
