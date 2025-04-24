@@ -130,7 +130,7 @@
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Review Card 1 -->
-            <div class="bg-gray-50 rounded-lg shadow-md p-6 transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
+            <div class="bg-gray-50 rounded-lg shadow-md p-6 transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col">
                 <div class="flex mb-3">
                     <!-- 5 Star Rating -->
                     <div class="flex">
@@ -151,10 +151,12 @@
                         </svg>
                     </div>
                 </div>
-                <blockquote class="italic text-gray-600 mb-6">
-                    "The facial treatment was absolutely divine! My skin feels refreshed and rejuvenated. The staff was professional and made me feel so comfortable throughout the entire session."
-                </blockquote>
-                <div class="flex items-center justify-between">
+                <div class="h-32 mb-4 overflow-hidden">
+                    <blockquote class="italic text-gray-600">
+                        "The facial treatment was absolutely divine! My skin feels refreshed and rejuvenated. The staff was professional and made me feel so comfortable throughout the entire session."
+                    </blockquote>
+                </div>
+                <div class="flex items-center justify-between mt-auto">
                     <span class="font-medium text-gray-800">Sophia Anderson</span>
                     <span class="text-sm py-1 px-3 rounded-full" style="background-color: rgba(225, 189, 132, 0.2); color: #E1BD84;">
                         Signature Facial
@@ -163,7 +165,7 @@
             </div>
             
             <!-- Review Card 2 -->
-            <div class="bg-gray-50 rounded-lg shadow-md p-6 transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
+            <div class="bg-gray-50 rounded-lg shadow-md p-6 transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col">
                 <div class="flex mb-3">
                     <!-- 4 Star Rating -->
                     <div class="flex">
@@ -184,10 +186,12 @@
                         </svg>
                     </div>
                 </div>
-                <blockquote class="italic text-gray-600 mb-6">
-                    "I've been using the Moisturizing Cream for a month now, and the results are amazing! My skin feels softer and more hydrated throughout the day. Will definitely purchase again."
-                </blockquote>
-                <div class="flex items-center justify-between">
+                <div class="h-32 mb-4 overflow-hidden">
+                    <blockquote class="italic text-gray-600">
+                        "I've been using the Moisturizing Cream for a month now, and the results are amazing! My skin feels softer and more hydrated throughout the day. Will definitely purchase again."
+                    </blockquote>
+                </div>
+                <div class="flex items-center justify-between mt-auto">
                     <span class="font-medium text-gray-800">Michael Johnson</span>
                     <span class="text-sm py-1 px-3 rounded-full" style="background-color: rgba(225, 189, 132, 0.2); color: #E1BD84;">
                         Moisturizing Cream
@@ -196,7 +200,7 @@
             </div>
             
             <!-- Review Card 3 -->
-            <div class="bg-gray-50 rounded-lg shadow-md p-6 transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
+            <div class="bg-gray-50 rounded-lg shadow-md p-6 transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col">
                 <div class="flex mb-3">
                     <!-- 5 Star Rating -->
                     <div class="flex">
@@ -217,10 +221,12 @@
                         </svg>
                     </div>
                 </div>
-                <blockquote class="italic text-gray-600 mb-6">
-                    "The anti-aging treatment exceeded all my expectations! The therapist was knowledgeable and attentive. My skin looks years younger after just one session. Highly recommend!"
-                </blockquote>
-                <div class="flex items-center justify-between">
+                <div class="h-32 mb-4 overflow-hidden">
+                    <blockquote class="italic text-gray-600">
+                        "The anti-aging treatment exceeded all my expectations! The therapist was knowledgeable and attentive. My skin looks years younger after just one session. Highly recommend!"
+                    </blockquote>
+                </div>
+                <div class="flex items-center justify-between mt-auto">
                     <span class="font-medium text-gray-800">Emma Richardson</span>
                     <span class="text-sm py-1 px-3 rounded-full" style="background-color: rgba(225, 189, 132, 0.2); color: #E1BD84;">
                         Anti-Aging Treatment
@@ -229,7 +235,7 @@
             </div>
             
             <!-- Review Card 4 -->
-            <div class="bg-gray-50 rounded-lg shadow-md p-6 transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
+            <div class="bg-gray-50 rounded-lg shadow-md p-6 transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col">
                 <div class="flex mb-3">
                     <!-- 4 Star Rating -->
                     <div class="flex">
@@ -250,10 +256,12 @@
                         </svg>
                     </div>
                 </div>
-                <blockquote class="italic text-gray-600 mb-6">
-                    "The Rejuvenating Mask is now an essential part of my weekly self-care routine. The difference in my skin texture is remarkable. This product is worth every penny!"
-                </blockquote>
-                <div class="flex items-center justify-between">
+                <div class="h-32 mb-4 overflow-hidden">
+                    <blockquote class="italic text-gray-600">
+                        "The Rejuvenating Mask is now an essential part of my weekly self-care routine. The difference in my skin texture is remarkable. This product is worth every penny!"
+                    </blockquote>
+                </div>
+                <div class="flex items-center justify-between mt-auto">
                     <span class="font-medium text-gray-800">David Chen</span>
                     <span class="text-sm py-1 px-3 rounded-full" style="background-color: rgba(225, 189, 132, 0.2); color: #E1BD84;">
                         Rejuvenating Mask
@@ -262,7 +270,7 @@
             </div>
             
             <!-- Review Card 5 -->
-            <div class="bg-gray-50 rounded-lg shadow-md p-6 transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
+            <div class="bg-gray-50 rounded-lg shadow-md p-6 transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col">
                 <div class="flex mb-3">
                     <!-- 3 Star Rating -->
                     <div class="flex">
@@ -283,10 +291,12 @@
                         </svg>
                     </div>
                 </div>
-                <blockquote class="italic text-gray-600 mb-6">
-                    "The Cleansing Gel works well for my sensitive skin. I appreciate that it doesn't dry out my face like other cleansers, though I wish it was a bit more effective with makeup removal."
-                </blockquote>
-                <div class="flex items-center justify-between">
+                <div class="h-32 mb-4 overflow-hidden">
+                    <blockquote class="italic text-gray-600">
+                        "The Cleansing Gel works well for my sensitive skin. I appreciate that it doesn't dry out my face like other cleansers, though I wish it was a bit more effective with makeup removal."
+                    </blockquote>
+                </div>
+                <div class="flex items-center justify-between mt-auto">
                     <span class="font-medium text-gray-800">Jennifer Taylor</span>
                     <span class="text-sm py-1 px-3 rounded-full" style="background-color: rgba(225, 189, 132, 0.2); color: #E1BD84;">
                         Cleansing Gel
@@ -295,7 +305,7 @@
             </div>
             
             <!-- Review Card 6 -->
-            <div class="bg-gray-50 rounded-lg shadow-md p-6 transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
+            <div class="bg-gray-50 rounded-lg shadow-md p-6 transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col">
                 <div class="flex mb-3">
                     <!-- 5 Star Rating -->
                     <div class="flex">
@@ -316,10 +326,12 @@
                         </svg>
                     </div>
                 </div>
-                <blockquote class="italic text-gray-600 mb-6">
-                    "The Facial Serum has transformed my skin! Fine lines are visibly reduced, and my complexion is brighter than ever. The whole experience at Moi Beauty Clinic was fantastic."
-                </blockquote>
-                <div class="flex items-center justify-between">
+                <div class="h-32 mb-4 overflow-hidden">
+                    <blockquote class="italic text-gray-600">
+                        "The Facial Serum has transformed my skin! Fine lines are visibly reduced, and my complexion is brighter than ever. The whole experience at Moi Beauty Clinic was fantastic."
+                    </blockquote>
+                </div>
+                <div class="flex items-center justify-between mt-auto">
                     <span class="font-medium text-gray-800">Sarah Wilson</span>
                     <span class="text-sm py-1 px-3 rounded-full" style="background-color: rgba(225, 189, 132, 0.2); color: #E1BD84;">
                         Facial Serum
