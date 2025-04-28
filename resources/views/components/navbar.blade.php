@@ -31,7 +31,7 @@
                         <a href="/treatment" class="px-3 py-2 text-sm font-medium text-amber-800 border-b-2 border-transparent hover:border-amber-800 hover:text-amber-700 transition duration-150">
                             Treatment
                         </a>
-                        <a href="#" class="px-3 py-2 text-sm font-medium text-amber-800 border-b-2 border-transparent hover:border-amber-800 hover:text-amber-700 transition duration-150">
+                        <a href="/contactUs" class="px-3 py-2 text-sm font-medium text-amber-800 border-b-2 border-transparent hover:border-amber-800 hover:text-amber-700 transition duration-150">
                             Contact Us
                         </a>
                     </div>

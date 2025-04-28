@@ -44,3 +44,8 @@ Route::prefix('admin')->group(function () {
         return view('treatment');
     })->name('treatment');
 
+    // Routes untuk Treatment
+    Route::get('/contactUs', function () {
+        return view('contactUs');
+    })->name('contactUs');
+
