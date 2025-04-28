@@ -22,13 +22,13 @@
                 <!-- Centered Navigation for desktop -->
                 <div class="hidden md:flex md:items-center md:justify-center flex-1">
                     <div class="flex space-x-10">
-                        <a href="#" class="px-3 py-2 text-sm font-medium text-amber-900 border-b-2 border-transparent hover:border-amber-800 hover:text-amber-700 transition duration-150">
+                        <a href="/" class="px-3 py-2 text-sm font-medium text-amber-900 border-b-2 border-transparent hover:border-amber-800 hover:text-amber-700 transition duration-150">
                             Home
                         </a>
                         <a href="#" class="px-3 py-2 text-sm font-medium text-amber-800 border-b-2 border-transparent hover:border-amber-800 hover:text-amber-700 transition duration-150">
                             Location &amp; Doctor
                         </a>
-                        <a href="#" class="px-3 py-2 text-sm font-medium text-amber-800 border-b-2 border-transparent hover:border-amber-800 hover:text-amber-700 transition duration-150">
+                        <a href="/treatment" class="px-3 py-2 text-sm font-medium text-amber-800 border-b-2 border-transparent hover:border-amber-800 hover:text-amber-700 transition duration-150">
                             Treatment
                         </a>
                         <a href="#" class="px-3 py-2 text-sm font-medium text-amber-800 border-b-2 border-transparent hover:border-amber-800 hover:text-amber-700 transition duration-150">
