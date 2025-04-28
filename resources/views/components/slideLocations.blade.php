@@ -31,24 +31,18 @@
         <div id="slides-container" class="flex transition-transform duration-1000 ease-out">
             <!-- Slide 1 -->
             <div class="min-w-full relative">
-                <img src="{{ asset('images/tempat.png') }}" alt="Slide 1" class="w-full h-[600px] object-cover">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent">
+                <img src="{{ asset('images/Facial.jpeg') }}" alt="Slide 1" class="w-full h-[600px] object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t  to-transparent">
                     <div class="absolute bottom-0 left-0 right-0 p-8 text-white transform transition-all duration-700 translate-y-0 opacity-100 slide-content">
-                        <h2 class="text-4xl font-bold mb-3 tracking-tight">Welcome to <span class="gold-color">Moi</span> Beauty Clinic</h2>
-                        <p class="text-xl max-w-xl leading-relaxed">Your destination for premium beauty and wellness treatments that inspire confidence</p>
-                        <button class="mt-6 gold-bg hover:bg-amber-600 gold-hover text-amber-900 px-6 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105 shadow-lg">Book Now</button>
                     </div>
                 </div>
             </div>
 
             <!-- Slide 2 -->
-            <div class="min-w-full relative">
-                <img src="{{ asset('images/logo.pg') }}" alt="Slide 2" class="w-full h-[600px] object-cover">
+            <div class="min-w-full relative">from-black/70
+                <img src="{{ asset('images/logo.png') }}" alt="Slide 2" class="w-full h-[600px] object-cover">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent">
                     <div class="absolute bottom-0 left-0 right-0 p-8 text-white transform transition-all duration-700 translate-y-0 opacity-100 slide-content">
-                        <h2 class="text-4xl font-bold mb-3 tracking-tight">Professional <span class="gold-color">Services</span></h2>
-                        <p class="text-xl max-w-xl leading-relaxed">Experience the best beauty treatments from our certified specialists</p>
-                        <button class="mt-6 gold-bg hover:bg-amber-600 gold-hover text-amber-900 px-6 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105 shadow-lg">View Services</button>
                     </div>
                 </div>
             </div>

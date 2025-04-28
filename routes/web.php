@@ -49,3 +49,7 @@ Route::prefix('admin')->group(function () {
         return view('contactUs');
     })->name('contactUs');
 
+    Route::get('/locations', function () {
+        return view('locations');
+    })->name('locations');
+
