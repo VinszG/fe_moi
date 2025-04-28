@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\ArticleController;
 use App\Http\Controllers\Admin\ContactController;
+use App\Http\Controllers\Treatment\TreatmentController;
 
 // === Public Routes ===
 Route::get('/', function () {
@@ -37,4 +38,9 @@ Route::prefix('admin')->group(function () {
     Route::put('products/{product}', [ProductController::class, 'update'])->name('admin.products.update');
     Route::delete('products/{product}', [ProductController::class, 'destroy'])->name('admin.products.destroy');
 });
+
+    // Routes untuk Treatment
+    Route::get('/treatment', function () {
+        return view('treatment');
+    })->name('treatment');
 
