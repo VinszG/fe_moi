@@ -25,7 +25,7 @@
                     <a href="/" class="px-3 py-2 text-sm font-medium text-amber-900 border-b-2 border-transparent hover:border-amber-800 hover:text-amber-700 transition duration-150">
                         Home
                     </a>
-                    <a href="locations" class="px-3 py-2 text-sm font-medium text-amber-800 border-b-2 border-transparent hover:border-amber-800 hover:text-amber-700 transition duration-150">
+                    <a href="doctor" class="px-3 py-2 text-sm font-medium text-amber-800 border-b-2 border-transparent hover:border-amber-800 hover:text-amber-700 transition duration-150">
                         Doctor &amp; Staff
                     </a>
                     <a href="/treatment" class="px-3 py-2 text-sm font-medium text-amber-800 border-b-2 border-transparent hover:border-amber-800 hover:text-amber-700 transition duration-150">
@@ -53,10 +53,9 @@
         <div class="hidden md:hidden shadow-inner bg-gradient-to-b from-[#FFF8E8] to-[#FDFAF2]" id="mobile-menu">
             <div class="pt-2 pb-3 space-y-1 border-t border-amber-100">
                 <a href="/" class="block pl-3 pr-4 py-3 border-l-4 border-amber-500 text-base font-medium text-amber-800 bg-amber-50/50">Home</a>
-                <a href="/location-doctor" class="block pl-3 pr-4 py-3 border-l-4 border-transparent text-base font-medium text-amber-800 hover:bg-amber-50/70 hover:border-amber-400 hover:text-amber-900 transition-all duration-200">Location &amp; Doctor</a>
+                <a href="/locations" class="block pl-3 pr-4 py-3 border-l-4 border-transparent text-base font-medium text-amber-800 hover:bg-amber-50/70 hover:border-amber-400 hover:text-amber-900 transition-all duration-200">Doctor &amp; Stuff</a>
                 <a href="/treatment" class="block pl-3 pr-4 py-3 border-l-4 border-transparent text-base font-medium text-amber-800 hover:bg-amber-50/70 hover:border-amber-400 hover:text-amber-900 transition-all duration-200">Treatment</a>
-                <a href="/booking" class="block pl-3 pr-4 py-3 border-l-4 border-transparent text-base font-medium text-amber-800 hover:bg-amber-50/70 hover:border-amber-400 hover:text-amber-900 transition-all duration-200">Booking</a>
-                <a href="/contact" class="block pl-3 pr-4 py-3 border-l-4 border-transparent text-base font-medium text-amber-800 hover:bg-amber-50/70 hover:border-amber-400 hover:text-amber-900 transition-all duration-200">Contact Us</a>
+                <a href="/contactUs" class="block pl-3 pr-4 py-3 border-l-4 border-transparent text-base font-medium text-amber-800 hover:bg-amber-50/70 hover:border-amber-400 hover:text-amber-900 transition-all duration-200">Contact Us</a>
             </div>
             <div class="pt-4 pb-3 border-t border-amber-100 bg-amber-50/30">
                 <div class="flex items-center px-4">
