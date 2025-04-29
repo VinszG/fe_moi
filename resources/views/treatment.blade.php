@@ -5,10 +5,10 @@
 <!-- Spacer antara slider dan isi -->
 <div class="h-16"></div>
 
-<section class="py-16 px-6 md:px-24 bg-white space-y-20">
+<section class="py-8 px-6 md:px-24 bg-white space-y-20">
 
     {{-- Section 1: Text kiri, Gambar kanan --}}
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <!-- Text -->
         <div class="space-y-5">
             <div>
@@ -17,23 +17,23 @@
                 <h4 class="text-sm text-[#d9b88b] uppercase tracking-wider mb-4">Treatment</h4>
             </div>
             <p class="text-gray-600 leading-relaxed text-justify">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+                Perawatan wajah yang menyegarkan, membersihkan, dan melembapkan kulit, memberikan tampilan yang lebih sehat dan bercahaya.
             </p>
         </div>
 
         <!-- Gambar -->
         <div class="shadow-lg rounded-md overflow-hidden">
-            <img src="{{ asset('images/white.jpeg') }}" alt="Facial Treatment" 
-                 class="w-full h-72 object-cover transition duration-500 ease-in-out hover:scale-105" />
+            <img src="{{ asset('images/Facial.jpeg') }}" alt="Facial Treatment" 
+                 class="w-full h-64 sm:h-64 md:h-72 object-cover transition duration-500 ease-in-out hover:scale-105" />
         </div>
     </div>
 
     {{-- Section 2: Gambar kiri, Text kanan --}}
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <!-- Gambar -->
         <div class="shadow-lg rounded-md overflow-hidden md:order-1">
-            <img src="{{ asset('images/white.jpeg') }}" alt="Skin Booster" 
-                 class="w-full h-72 object-cover transition duration-500 ease-in-out hover:scale-105" />
+            <img src="{{ asset('images/Skin Booster.jpg') }}" alt="Skin Booster" 
+                 class="w-full h-64 sm:h-64 md:h-72 object-cover transition duration-500 ease-in-out hover:scale-105" />
         </div>
 
         <!-- Text -->
@@ -44,13 +44,13 @@
                 <h4 class="text-sm text-[#d9b88b] uppercase tracking-wider mb-4">Treatment</h4>
             </div>
             <p class="text-gray-600 leading-relaxed text-justify">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+                Perawatan ini bertujuan untuk mengatasi masalah kulit seperti flek hitam, kerutan, dan tekstur kulit yang tidak rata, serta membantu merevitalisasi kulit agar tampak lebih awet muda. 
             </p>
         </div>
     </div>
 
     {{-- Section 3: Text kiri, Gambar kanan --}}
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <!-- Text -->
         <div class="space-y-5">
             <div>
@@ -59,23 +59,23 @@
                 <h4 class="text-sm text-[#d9b88b] uppercase tracking-wider mb-4">Treatment</h4>
             </div>
             <p class="text-gray-600 leading-relaxed text-justify">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+                Prosedur medis yang menggunakan cahaya terfokus untuk mengatasi berbagai masalah kulit dan kesehatan, seperti kerutan, bekas luka, jerawat, dan bahkan pengobatan kanker.
             </p>
         </div>
 
         <!-- Gambar -->
         <div class="shadow-lg rounded-md overflow-hidden">
-            <img src="{{ asset('images/white.jpeg') }}" alt="Laser Treatment" 
-                 class="w-full h-72 object-cover transition duration-500 ease-in-out hover:scale-105" />
+            <img src="{{ asset('images/laser1.jpg') }}" alt="Laser Treatment" 
+                 class="w-full h-64 sm:h-64 md:h-72 object-cover transition duration-500 ease-in-out hover:scale-105" />
         </div>
     </div>
 
     {{-- Section 4: Gambar kiri, Text kanan --}}
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <!-- Gambar -->
         <div class="shadow-lg rounded-md overflow-hidden md:order-1">
-            <img src="{{ asset('images/white.jpeg') }}" alt="Peeling" 
-                 class="w-full h-72 object-cover transition duration-500 ease-in-out hover:scale-105" />
+            <img src="{{ asset('images/peeling.jpeg') }}" alt="Peeling" 
+                 class="w-full h-64 sm:h-64 md:h-72 object-cover transition duration-500 ease-in-out hover:scale-105" />
         </div>
 
         <!-- Text -->
@@ -86,13 +86,13 @@
                 <h4 class="text-sm text-[#d9b88b] uppercase tracking-wider mb-4">Treatment</h4>
             </div>
             <p class="text-gray-600 leading-relaxed text-justify">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+                Prosedur perawatan kulit yang mengangkat lapisan terluar kulit mati untuk merangsang regenerasi sel kulit baru, sehingga kulit terlihat lebih halus, cerah, dan tampak lebih muda.
             </p>
         </div>
     </div>
 
     {{-- Section 5: Text kiri, Gambar kanan --}}
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <!-- Text -->
         <div class="space-y-5">
             <div>
@@ -101,14 +101,14 @@
                 <h4 class="text-sm text-[#d9b88b] uppercase tracking-wider mb-4">Treatment</h4>
             </div>
             <p class="text-gray-600 leading-relaxed text-justify">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+                Botox adalah singkatan dari Botulinum toxin, yaitu sejenis protein neurotoksik yang dihasilkan oleh bakteri Clostridium botulinum. Botox bekerja dengan cara menghalangi sinyal dari saraf yang menyebabkan kontraksi otot sehingga dapat merelaksasi otot secara sementara.
             </p>
         </div>
 
         <!-- Gambar -->
         <div class="shadow-lg rounded-md overflow-hidden">
-            <img src="{{ asset('images/white.jpeg') }}" alt="Botox Treatment" 
-                 class="w-full h-72 object-cover transition duration-500 ease-in-out hover:scale-105" />
+            <img src="{{ asset('images/botox.webp') }}" alt="Botox Treatment" 
+                 class="w-full h-64 sm:h-64 md:h-72 object-cover transition duration-500 ease-in-out hover:scale-105" />
         </div>
     </div>
 

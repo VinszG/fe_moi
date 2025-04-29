@@ -31,16 +31,16 @@
         <div id="slides-container" class="flex transition-transform duration-1000 ease-out">
             <!-- Slide 1 -->
             <div class="min-w-full relative">
-                <img src="{{ asset('images/Facial.jpeg') }}" alt="Slide 1" class="w-full h-[600px] object-cover">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent">
+                <img src="{{ asset('images/tempat.jpg') }}" alt="Slide 1" class="w-full h-[600px] object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t  to-transparent">
                     <div class="absolute bottom-0 left-0 right-0 p-8 text-white transform transition-all duration-700 translate-y-0 opacity-100 slide-content">
                     </div>
                 </div>
             </div>
 
             <!-- Slide 2 -->
-            <div class="min-w-full relative">
-                <img src="{{ asset('images/logofix.jpg') }}" alt="Slide 2" class="w-full h-[600px] object-cover">
+            <div class="min-w-full relative">from-black/70
+                <img src="{{ asset('images/logo.png') }}" alt="Slide 2" class="w-full h-[600px] object-cover">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent">
                     <div class="absolute bottom-0 left-0 right-0 p-8 text-white transform transition-all duration-700 translate-y-0 opacity-100 slide-content">
                     </div>
@@ -49,10 +49,8 @@
 
             <!-- Slide 3 -->
             <div class="min-w-full relative">
-                <img src="{{ asset('images/tempat.jpg') }}" alt="Slide 3" class="w-full h-[600px] object-cover">
+                <img src="{{ asset('images/123.jpg') }}" alt="Slide 3" class="w-full h-[600px] object-cover">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent">
-                    <div class="absolute bottom-0 left-0 right-0 p-8 text-white transform transition-all duration-700 translate-y-0 opacity-100 slide-content">
-                    </div>
                 </div>
             </div>
         </div>

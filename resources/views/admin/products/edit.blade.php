@@ -20,7 +20,13 @@
 
             <div>
                 <label for="price" class="block text-sm font-semibold text-gray-700 mb-1">Harga</label>
-                <input type="number" id="price" name="price" class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-200" value="{{ old('price', $product->price) }}" required>
+                <div class="relative">
+                    <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500">Rp</span>
+                    <input type="text" id="price" name="price" 
+                        class="w-full px-8 py-2 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-200" 
+                        value="{{ old('price', number_format($product->price, 0, ',', '.')) }}" 
+                        required oninput="formatPrice(this)">
+                </div>
             </div>
 
             <div>
@@ -36,4 +42,24 @@
             </div>
         </form>
     </div>
+
+    <script>
+        function formatPrice(input) {
+            let value = input.value.replace(/\D/g, '');
+    
+            if (value === '') value = '0';
+    
+            input.value = parseInt(value).toLocaleString('id-ID');
+        }
+    
+        document.addEventListener('DOMContentLoaded', () => {
+            const priceInput = document.getElementById('price');
+            formatPrice(priceInput);
+        });
+    
+        document.querySelector('form').addEventListener('submit', function () {
+            const priceInput = document.getElementById('price');
+            priceInput.value = priceInput.value.replace(/\./g, '');
+        });
+    </script>
 @endsection

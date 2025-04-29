@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,79 +11,101 @@
         .gold-color {
             color: #E1BD84;
         }
+
         .gold-bg {
             background-color: #E1BD84;
         }
+
         .gold-hover:hover {
             background-color: #d5ad6c;
         }
+
         .gold-border {
             border-color: #E1BD84;
         }
+
         .indicator-active {
             background-color: #E1BD84;
             width: 5rem;
         }
     </style>
 </head>
+
 <body>
     <div class="relative w-full overflow-hidden group">
         <!-- Slideshow container -->
         <div id="slides-container" class="flex transition-transform duration-1000 ease-out">
             <!-- Slide 1 -->
             <div class="min-w-full relative">
-                <img src="{{ asset('images/slide1.jpg') }}" alt="Slide 1" class="w-full h-[600px] object-cover">
+                <img src="{{ asset('images/tempat.jpg') }}" alt="Slide 1" class="w-full h-[600px] object-cover">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent">
-                    <div class="absolute bottom-0 left-0 right-0 p-8 text-white transform transition-all duration-700 translate-y-0 opacity-100 slide-content">
-                        <h2 class="text-4xl font-bold mb-3 tracking-tight">Welcome to <span class="gold-color">Moi</span> Beauty Clinic</h2>
-                        <p class="text-xl max-w-xl leading-relaxed">Your destination for premium beauty and wellness treatments that inspire confidence</p>
-                        <button class="mt-6 gold-bg hover:bg-amber-600 gold-hover text-amber-900 px-6 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105 shadow-lg">Book Now</button>
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-8 text-white transform transition-all duration-700 translate-y-0 opacity-100 slide-content">
+                        <h2 class="text-4xl font-bold mb-3 tracking-tight">Selamat datang di <span
+                                class="gold-color">Moi</span> Beauty Clinic</h2>
+                        <p class="text-xl max-w-xl leading-relaxed">Destinasi Anda untuk perawatan kecantikan dan
+                            kebugaran premium yang menginspirasi kepercayaan diri</p>
+                        
                     </div>
                 </div>
             </div>
 
             <!-- Slide 2 -->
             <div class="min-w-full relative">
-                <img src="{{ asset('images/slide2.jpg') }}" alt="Slide 2" class="w-full h-[600px] object-cover">
+                <img src="{{ asset('images/logofix.jpg') }}" alt="Slide 2" class="w-full h-[600px] object-cover">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent">
-                    <div class="absolute bottom-0 left-0 right-0 p-8 text-white transform transition-all duration-700 translate-y-0 opacity-100 slide-content">
-                        <h2 class="text-4xl font-bold mb-3 tracking-tight">Professional <span class="gold-color">Services</span></h2>
-                        <p class="text-xl max-w-xl leading-relaxed">Experience the best beauty treatments from our certified specialists</p>
-                        <button class="mt-6 gold-bg hover:bg-amber-600 gold-hover text-amber-900 px-6 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105 shadow-lg">View Services</button>
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-8 text-white transform transition-all duration-700 translate-y-0 opacity-100 slide-content">
+                        <h2 class="text-4xl font-bold mb-3 tracking-tight">Layanan <span
+                                class="gold-color">Profesional</span></h2>
+                        <p class="text-xl max-w-xl leading-relaxed">Rasakan perawatan kecantikan terbaik dari spesialis
+                            bersertifikat kami</p>
                     </div>
                 </div>
             </div>
 
             <!-- Slide 3 -->
             <div class="min-w-full relative">
-                <img src="{{ asset('images/slide3.jpg') }}" alt="Slide 3" class="w-full h-[600px] object-cover">
+                <img src="{{ asset('images/123.jpg') }}" alt="Slide 3" class="w-full h-[600px] object-cover">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent">
-                    <div class="absolute bottom-0 left-0 right-0 p-8 text-white transform transition-all duration-700 translate-y-0 opacity-100 slide-content">
-                        <h2 class="text-4xl font-bold mb-3 tracking-tight">Special <span class="gold-color">Offers</span></h2>
-                        <p class="text-xl max-w-xl leading-relaxed">Discover exclusive promotions and packages designed for your beauty journey</p>
-                        <button class="mt-6 gold-bg hover:bg-amber-600 gold-hover text-amber-900 px-6 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105 shadow-lg">See Offers</button>
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-8 text-white transform transition-all duration-700 translate-y-0 opacity-100 slide-content">
+                        <h2 class="text-4xl font-bold mb-3 tracking-tight">Penawaran <span
+                                class="gold-color">Spesial</span></h2>
+                        <p class="text-xl max-w-xl leading-relaxed">Temukan promosi dan paket eksklusif yang dirancang
+                            untuk perjalanan kecantikan Anda</p>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Navigation buttons - improved with transitions -->
-        <button id="prev" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-amber-50/30 backdrop-blur-sm text-amber-900 p-3 rounded-full focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:gold-bg gold-hover">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <button id="prev"
+            class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-amber-50/30 backdrop-blur-sm text-amber-900 p-3 rounded-full focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:gold-bg gold-hover">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
             </svg>
         </button>
-        <button id="next" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-amber-50/30 backdrop-blur-sm text-amber-900 p-3 rounded-full focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:gold-bg gold-hover">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <button id="next"
+            class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-amber-50/30 backdrop-blur-sm text-amber-900 p-3 rounded-full focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:gold-bg gold-hover">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
         </button>
 
         <!-- Improved indicators -->
         <div class="absolute bottom-6 left-0 right-0 flex justify-center space-x-3">
-            <button class="slide-indicator h-1.5 w-12 bg-amber-50/50 rounded-full hover:bg-amber-50/70 transition-all duration-300" data-slide="0"></button>
-            <button class="slide-indicator h-1.5 w-12 bg-amber-50/50 rounded-full hover:bg-amber-50/70 transition-all duration-300" data-slide="1"></button>
-            <button class="slide-indicator h-1.5 w-12 bg-amber-50/50 rounded-full hover:bg-amber-50/70 transition-all duration-300" data-slide="2"></button>
+            <button
+                class="slide-indicator h-1.5 w-12 bg-amber-50/50 rounded-full hover:bg-amber-50/70 transition-all duration-300"
+                data-slide="0"></button>
+            <button
+                class="slide-indicator h-1.5 w-12 bg-amber-50/50 rounded-full hover:bg-amber-50/70 transition-all duration-300"
+                data-slide="1"></button>
+            <button
+                class="slide-indicator h-1.5 w-12 bg-amber-50/50 rounded-full hover:bg-amber-50/70 transition-all duration-300"
+                data-slide="2"></button>
         </div>
 
         <!-- JavaScript for enhanced slideshow functionality -->
@@ -94,7 +117,7 @@
                 let currentSlide = 0;
                 const indicators = document.querySelectorAll('.slide-indicator');
                 let autoplayInterval;
-                
+
                 // Initialize slideshow
                 updateIndicators();
                 startAutoplay();
@@ -106,16 +129,16 @@
                     } else if (slideIndex >= totalSlides) {
                         slideIndex = 0;
                     }
-                    
+
                     // Hide current slide content
                     const currentContent = slides[currentSlide].querySelector('.slide-content');
                     currentContent.classList.add('translate-y-8', 'opacity-0');
-                    
+
                     // Move to new slide
                     setTimeout(() => {
                         slidesContainer.style.transform = `translateX(-${slideIndex * 100}%)`;
                         currentSlide = slideIndex;
-                        
+
                         // Show new slide content after a brief delay
                         setTimeout(() => {
                             const newContent = slides[currentSlide].querySelector('.slide-content');
@@ -124,7 +147,7 @@
                         }, 300);
                     }, 300);
                 }
-                
+
                 // Enhanced indicator updates with animations
                 function updateIndicators() {
                     indicators.forEach((indicator, index) => {
@@ -137,33 +160,33 @@
                         }
                     });
                 }
-                
+
                 function startAutoplay() {
                     stopAutoplay();
                     autoplayInterval = setInterval(() => {
                         goToSlide(currentSlide + 1);
-                    }, 4000);  // Longer display time for better readability
+                    }, 4000); // Longer display time for better readability
                 }
-                
+
                 function stopAutoplay() {
                     if (autoplayInterval) {
                         clearInterval(autoplayInterval);
                     }
                 }
-                
+
                 // Event handlers with autoplay reset
                 document.getElementById('next').addEventListener('click', () => {
                     stopAutoplay();
                     goToSlide(currentSlide + 1);
                     startAutoplay();
                 });
-                
+
                 document.getElementById('prev').addEventListener('click', () => {
                     stopAutoplay();
                     goToSlide(currentSlide - 1);
                     startAutoplay();
                 });
-                
+
                 indicators.forEach((indicator, index) => {
                     indicator.addEventListener('click', () => {
                         if (currentSlide !== index) {
@@ -173,12 +196,12 @@
                         }
                     });
                 });
-                
+
                 // Pause autoplay when user hovers over slideshow
                 const slideshowContainer = document.querySelector('.relative.w-full.overflow-hidden');
                 slideshowContainer.addEventListener('mouseenter', stopAutoplay);
                 slideshowContainer.addEventListener('mouseleave', startAutoplay);
-                
+
                 // Initialize all slides with hidden content except the first one
                 Array.from(slides).forEach((slide, index) => {
                     const content = slide.querySelector('.slide-content');
@@ -190,4 +213,5 @@
         </script>
     </div>
 </body>
+
 </html>
